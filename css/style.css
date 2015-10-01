@@ -1,0 +1,853 @@
+@charset "utf-8";
+
+/* ============================== */
+/* 
+	- Title: Resume html Template
+	- Autor: Coralixthemes
+*/
+/* ============================== */
+
+/* ---------------------------------------------------------------------- */
+/*	Import styles
+/* ---------------------------------------------------------------------- */
+
+/* bootstrap.css  - include resets ( Media querys, grid-responsive,layout).*/
+@import url("bootstrap/bootstrap.min.css");
+@import url("bootstrap/bootstrap-responsive.min.css");
+
+/* CSS3 Animations.*/
+@import url("animations/animate.css");
+
+/* ---------------------------------------------------------------------- */
+/* Customization over Twitter Bootstrap */
+/* ---------------------------------------------------------------------- */
+
+hr {
+  border-width: 1px 0 0;
+}
+
+iframe {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 95%;
+  height: 102px;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar .navbar-inner {
+  background: #fff;
+  filter: none;
+  color: #808181;
+  border: 0;
+  padding: 0;
+}
+
+.navbar .nav { 
+  display: table;
+  margin: 0px;
+  width: 100%;
+}
+
+.navbar .nav li { 
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+
+.navbar .nav li a { 
+  border-left: 1px solid #ccc;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: none;
+  padding: 26px 0;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.navbar .nav > li > a.active,
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #fff;
+}
+
+.navbar .nav li:last-child a { 
+  border-radius: 0 3px 3px 0;
+}
+.navbar .nav li:first-child a { 
+  border-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Buttons
+ * ================
+ */
+
+[class*="btn-"] {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 0 5px rgba(0,0,0,.25);
+}
+
+.btn-primary {
+  background: #e7653e;
+  border-color: #c54a28;
+  color: #fff; 
+}
+.btn-primary:hover {
+  background: #c54a28;
+  color: #fff; 
+}
+
+.btn-info {
+  color: #fff; 
+  background: #598bac;
+  border-color: #4e80a0;
+}
+.btn-info:hover {
+  color: #fff; 
+  background: #4e80a0;
+}
+
+.btn-success {
+  color: #fff; 
+  background: #3dad73;
+  border-color: #3b9767;
+}
+.btn-success:hover {
+  color: #fff; 
+  background: #3b9767;
+}
+
+.btn-warning {
+  color: #fff;
+  background: #deba4a;
+}
+.btn-warning:hover {
+  color: #fff;
+  background: #92751A;
+}
+.btn-all {
+  color: #fff;
+  background: #bbbbbb;
+}
+.btn-all:hover {
+  color: #fff;
+  background: #9f9f9f;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  background: none;
+  height: auto;
+  line-height: 1;
+  margin: 0;
+  width: auto;
+}
+
+label {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #626262;
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+.input-append,
+.input-prepend {
+  display: block;
+}
+
+.input-prepend .add-on [class^="icon-"]::before,
+.input-append .add-on [class^="icon-"]::before,
+.input-prepend .add-on [class^="icon-"]::before,
+.input-append .add-on [class*=" icon-"]::before {
+  line-height: 47px;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+   height: 38px;
+   line-height: 38px;
+   font-size: 18px;
+   box-shadow: none;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+}
+
+form {
+  padding: 0 20px 0 0;
+}
+
+.input-append input {
+  width: 80%;
+}
+
+.input-append .add-on,
+.input-prepend .add-on {
+  height: 38px;
+  font-size: 20px;
+  min-width: 2em;
+}
+
+h2 small {
+  font-weight: bold;
+}
+
+/* Fancybox customizations */
+
+.fancybox-skin {
+  background: #ffffff;
+}
+
+.fancybox-type-iframe .fancybox-skin {
+  background: #ffffff;
+}
+
+.fancybox-close {
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+  background-image: url('fancybox/fancybox-close.png');
+  width: 24px;
+  height: 23px;
+}
+
+/* Social icons customization */
+
+/* Twitter */
+.twitter-share-button {
+  border: 0;
+  vertical-align: top;
+  width: 100px !important;
+}
+/* Google Plus */
+/* Pinterest */
+.fb-like,
+[class*="_pin_it_button"],
+[id*="___plusone"] {
+  vertical-align: top !important;
+  margin-right: 15px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Template Custom styles */
+/* ---------------------------------------------------------------------- */
+
+
+/* Common styles for all the site */
+
+body {
+  /*background: #5d9bd6 url(../img/background/01.png);*/
+}
+
+.body {
+  max-width: 780px;
+  line-height: 1.8;
+  margin: auto;
+  padding: 1em 0;
+}
+
+/* Header */
+header.site-header h1 {
+	margin:20px 0;
+	padding:0;
+}
+
+#content {
+  background: #fff;
+  color: #808181;
+  border-radius: 4px 4px 0 0;
+  padding: 0 0 1px;
+}
+
+.maintext {
+  padding: 38px 28px;
+}
+
+.maintext > .row-fluid {
+  margin-bottom: 40px;
+}
+
+.maintext h2 {
+  color: #626262;
+  font-size: 27px;
+}
+
+.maintext h3 {
+  font-size: 14px;
+  margin: 0 0 10px;
+  line-height: 1;
+}
+
+/* Section name */
+.section-name {
+  background: #626262;
+  color: #fff;
+  padding: 17px 28px;
+  border-radius: 4px 4px 0 0;
+}
+
+.section-name .title {
+  font-size: 27px;
+  margin: 0;
+}
+
+/* Footer */
+.site-footer {
+  background: #ebebeb;
+  color: #808181;
+  font-size: 13px;
+  border-radius: 0 0 4px 4px;
+  padding: 20px 28px 10px 28px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer [class*="icon"] {
+  margin: 0 0.5em 0 0;
+}
+
+/* Horizontal navigation */
+
+.hnav li {
+  display: inline-block;
+}
+
+/* Nav */
+.nav-label {
+  margin: 10px 0 0 10px;
+  text-transform: none;
+  display: none;
+}
+
+@media (max-width: 979px) {
+  .nav-label {
+    display: block;
+  }
+}
+
+
+
+/* Home page
+ * =========
+ */ 
+ 
+ #home-placeholder {
+  /*background: #c48573 url("../img/big-home-into.jpg") no-repeat 0 0;*/
+  background: #D2E7E8 url("../img/python-it-1.jpg") no-repeat 0 0;
+  width: 780px;
+  height: 300px;
+  margin: 0;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Totally rounded button / Featured download */
+
+.button-inner,
+.button {
+  display: inline-block;
+  background: #e07151 url("../img/rsz_myprofilee.jpg") no-repeat 0 0;
+  color: #fff;
+  border: 1px solid #eee;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  /* Prevent background color leak outs */
+  -webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box;
+  border-radius: 50%;
+}
+
+.button-inner {
+  width: 145px;
+  /*padding: 40px 0;*/
+  padding: 60px 0;
+  border: 8px solid #fff;
+}
+
+.button [class*="icon"] {
+  font-size: 40px;
+  line-height: 40px;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+/* Featured text */
+
+.featured-text {
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #b3b3b3;
+  background: #fff;
+  line-height: 29px;
+}
+
+.featured-text b {
+  color: #626262;
+  background: #fff;
+}
+
+
+
+/* Contact page
+ * ============
+ */
+
+#contactinfo .btn {
+  text-transform: uppercase;
+}
+
+.maintext h2.contact-title {
+	margin-top:0;
+}
+
+/* List of social icons */
+.social-icons-nav {
+  font-size: 19px;
+}
+.social-icons-nav li {
+  display: inline-block; 
+}
+.social-icons-nav a {
+  border-radius: 50%;
+  background: #626262;
+  color: #fff;
+  padding: 9px 7px;
+}
+.social-icons-nav a:hover {
+  background: #e7653e; 
+  color: #fff;
+}
+.social-icons-nav i {
+  vertical-align: middle;
+}
+
+
+
+/* Skills page
+ * ===========
+ */
+
+/* Skills graph bar */
+
+#skills-percentage p {
+  margin-bottom: 25px;
+}
+
+.bar {
+  border-radius: 4px;
+  display: inline-block;
+  background: #ccc;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.bar-yellow {
+  background: #eac85d;
+}
+.bar-green {
+  background: #4db07a;
+}
+.bar-blue {
+  background: #5d9bd6;
+}
+.bar-red {
+  background: #f37576;
+}
+
+.bar-green,
+.bar-yellow,
+.bar-blue,
+.bar-red {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  padding: 0 1em;
+  text-align: right;
+}
+
+
+.bar .progress10 {
+	width:10%;
+}
+.bar .progress20 {
+	width:20%;
+}
+.bar .progress30 {
+	width:30%;
+}
+.bar .progress40 {
+	width:40%;
+}
+.bar .progress50 {
+	width:50%;
+}
+.bar .progress60 {
+	width:60%;
+}
+.bar .progress70 {
+	width:70%;
+}
+.bar .progress80 {
+	width:80%;
+}
+.bar .progress90 {
+	width:90%;
+}
+.bar .progress100 {
+	width:100%;
+}
+
+/* Skills pie chart */
+
+#skill-graph {
+  background: url("../img/skill-graph.png") no-repeat;
+  margin: 0 auto 20px auto;
+  width: 228px;
+  height: 140px;
+  padding-top: 88px;
+  text-align: center;
+  color: #e45e3b;
+  font-size: 13px;
+}
+
+#skill-graph strong {
+  color: #808181;
+  font-size: 20px;
+}
+
+/* Skills table */
+
+#skill-table [class*="span"] {
+  width: 32.5%;
+  margin: 0 0.5% 0 0;
+  background: #eee;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+#skill-table strong {
+  font-size: 20px;
+}
+
+/* Borders of skills table */
+[class*=bt-] {
+  padding: 10px 0 5px;
+}
+.bt-green {
+  border-top: 3px solid #4daf7c;
+}
+.bt-orange {
+  border-top: 3px solid #e85f3e;
+}
+.bt-yellow {
+  border-top: 3px solid #e9c457; 
+}
+
+
+/* Pricing Table */
+
+.pricing-table h3 {
+  color: #626262;
+  font-size: 27px;
+  background: #ebebeb;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #cdcdcd;
+  border-width: 1px 1px 0;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.pricing-table h3 small {
+  font-size: 23px;
+  color: #626262;
+}
+
+.pricing-table ul {
+  border: 1px solid #cdcdcd;
+  border-width: 0 1px;
+  margin: 0;
+}
+
+.pricing-table li {
+  border-bottom: 1px solid #cdcdcd;
+  padding: 13px 0;
+  font-size: 18px;
+}
+
+.pricing-table .askquote {
+  border: 1px solid #cdcdcd;
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  padding: 15px 0;
+}
+
+.pricing-table .btn {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow:none;
+  padding:11px 34px!important
+}
+
+/* Work experience columns */
+
+.definition-rows .dt {
+  border-right: 2px solid #4daf7c;
+  margin-bottom: 20px;
+} 
+.definition-rows .dd {
+  background: url("../img/bg-arrow.png") no-repeat 0 50%;
+  margin: 0;
+  padding-left: 2.13%;
+}
+
+
+/* Works page
+ * ==========
+ */
+
+/* Row of buttons to filter works */
+
+.filter-block {
+  border-radius: 4px;
+  border: 1px solid #cdcdcd;
+  padding: 5px 15px 0;
+  margin-bottom: 1em;
+}
+.filter-block .filter-label {
+  font-weight: bold;
+  font-size: 22px; 
+  line-height: 54px;
+  margin: 0;
+}
+.filter-block .btn {
+  margin-left: 1em;
+  margin: 10px 0 10px 1em;
+  box-shadow:none;
+  padding:7px 15px;
+}
+
+/* Each work has this class */
+
+.work {
+  width: 130px;
+  height: 119px;
+  overflow: hidden;
+  background-color: #8e8171;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px 11px 5px 0;
+}
+
+.work.photoshop div,
+.work.photoshop a,
+.work.photoshop:hover {
+  background-color: #58a77a !important;
+}
+
+.work.webdesign div,
+.work.webdesign a,
+.work.webdesign:hover {
+  background-color: #598BAC !important;
+}
+
+.work.wordpress div,
+.work.wordpress a,
+.work.wordpress:hover {
+  background-color: #E7653E !important;
+ 
+}
+
+.work.icondesign div,
+.work.icondesign a,
+.work.icondesign:hover {
+  background-color: #DEBA4A !important;
+}
+
+.work:hover img {
+  display: none;
+}
+
+.work img,
+.work a {
+  border-radius: 4px;
+}
+
+[data-zlname] [data-zl-popup] {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #58a77a; 
+  padding: 20px 0;
+  width: 100%;
+}
+
+.iframed {
+  padding: 0;
+  background: #fff;
+}
+.iframed #content {
+  border-radius: 0;
+  padding: 1px 0;
+}
+.iframed #content .span6 img {
+	margin: 10px 0;
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+   
+/* ---------------------------------------------------------------------- */
+/*	Version 1024px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 1024px) {}
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 767px
+/* ---------------------------------------------------------------------- */
+
+@media(max-width:767px) {
+  /* 767px is when bootstrap cols take 100% of container width */
+
+  .pricing-table .span4 {
+    margin-top: 20px;
+  }
+  .pricing-table .span4:first-child {
+    margin-top: 0;
+  }
+
+  .definition-rows {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4daf7c;
+  }
+  .definition-rows .dt,
+  .definition-rows .dd {
+    height: auto !important;
+  }
+  .definition-rows .dt {
+    border: 0;
+  }
+  .definition-rows .dd {
+    background-image: none;
+    padding: 0;
+  }
+
+  #skill-table [class*="span"] {
+    width: 100%;
+  }
+
+  .navbar .nav li {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 600px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 600px) {}
+	
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 568px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 568px) {}
+
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 480px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 480px) {}
+
+
+/* ---------------------------------------------------------------------- */
+/*	Mobile Version 320px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 320px) { }
+
+
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
