@@ -1,0 +1,58 @@
+/*This is a main properties. Don't change them*/
+/*Example of user settings you can see in demos.css file*/
+/*MAIN CONTAINER*/
+[data-zlname]{
+	position: relative;
+	overflow: hidden;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+/*IMGS IN CONTAINER*/
+[data-zlname] > img{
+	display: block;
+	max-width: 100%;
+}
+/*POP UP ELEMENTS*/
+[data-zlname] [data-zl-popup]{
+	position: absolute;
+	display: block;
+	padding: 20px;
+	height: 40px;
+	width: 40px;
+	background: #323231;
+	color: #fff;
+	overflow: hidden;
+	display: none;
+	text-align: center;
+}
+/*OVERLAY*/
+/*classic*/
+[data-zl-overlay]{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	padding: inherit;
+}
+/*four*/
+[data-zl-ovzoom0],[data-zl-ovzoom1]
+,[data-zl-ovzoom2],[data-zl-ovzoom3]{
+	position: absolute;
+	width: 25%;
+	height: 100%;
+}
+/*rolling*/
+[data-zl-ovrolling]{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+/*double*/
+[data-zl-ovdouble0],[data-zl-ovdouble1]{
+	position: absolute;
+	display: none;
+}
