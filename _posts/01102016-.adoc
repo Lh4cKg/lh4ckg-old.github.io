@@ -1,0 +1,5 @@
+= პოსტის სახელი
+== ტექსტი
+
+:hp-tags: fa,ryht,wret,dfg
+:published_at: 01.10.2016
